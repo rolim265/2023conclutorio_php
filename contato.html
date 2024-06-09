@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contato.css">
+    
+
+</head>
+
+<body>
+    <header class="fixo">
+        <nav class="navbar">
+            <img src="img/log.png" alt="Logo da Empresa" class="navbar-logo">
+
+            <ul class="navbar-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Entre em contato conosco</h1>
+        <p>Estamos aqui para ajudar e ouvir suas sugestões e dúvidas sobre deficiência motora.</p>
+        <form action="sendmail.php" method="POST">
+            <div class="input-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer class="site-footer">
+        <p>© 2023 Todos os direitos reservados. ΣΛƧYΛᄃΣƧƧ .</p>
+    </footer>
+</body>
+
+</html>
