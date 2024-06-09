@@ -1,0 +1,570 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Para telas muito pequenas (mobile) */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px; 
+    }
+}
+
+/* Para telas médias (tablets, etc.) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    body {
+        font-size: 16px; 
+    }
+}
+
+/* Para telas grandes (desktops, etc.) */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    border: 5px #333;
+
+}
+
+.navbar-logo {
+    width: 60px;
+    /* Ajuste conforme o tamanho desejado para o logo */
+    height: auto;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s;
+}
+
+
+.persona-wrapper {
+    display: flex;
+    align-items: center;
+    /* Centraliza verticalmente os itens no contêiner */
+    gap: 30px;
+    /* Espaçamento entre o texto e a imagem */
+    padding: 35px;
+    background-color: #f4f4f8;
+    /* Cor de fundo leve para destacar a seção */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px darkblue, 10px 10px purple, 15px 15px violet;
+    margin: 20px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.persona-text {
+    flex: 1;
+    /* Ocupa todo o espaço disponível, dividindo igualmente com a imagem */
+    padding: 20px;
+}
+
+.persona-text h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.persona-text p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.persona-image {
+    flex: 1;
+    position: relative;
+    width: 50%;
+}
+
+.persona-image img {
+    max-width: 50%;
+    /* Garante que a imagem não exceda o tamanho do contêiner */
+    border-radius: 10px;
+    /* Bordas arredondadas na imagem */
+
+}
+
+
+.deficiencia-container {
+    padding-left: 10px;
+}
+
+.noticias-wrapper {
+    flex: 1;
+    padding: 5%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    margin-right: 2px;
+}
+
+.noticia-container {
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    /* Espaçamento entre as notícias */
+}
+
+
+.navbar-menu li a:hover {
+    color: #ffffff;
+    /* Muda a cor ao passar o mouse */
+}
+
+.content-wrapper {
+    display: flex;
+    margin-left: 30px;
+    gap: 20px;
+    /* Espaçamento entre os itens flex */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+.deficiencia-container {
+    margin-left: 30px;
+}
+
+.noticia-container {
+    flex: 1;
+    /* Permite que ambos os contêineres ocupem metade do espaço disponível */
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ... (restante do CSS dos componentes 'deficiencia-container' e 'noticia-container' que você já tem) ... */
+
+
+.noticia-container {
+    display: flex;
+    margin: 20px 0;
+    border: 3px solid #e0e0e0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.noticia-imagem {
+    flex: 1;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.noticia-conteudo {
+    flex: 2;
+    padding: 20px;
+}
+
+.ler-mais {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.ler-mais:hover {
+    background-color: #0056b3;
+}
+
+.botoes-container {
+    display: flex;
+    justify-content: space-around;
+    /* Distribui os botões igualmente na linha */
+    align-items: center;
+    padding: 20px;
+}
+
+.btn-azul {
+    background-color: #AEDFF7;
+    /* Cor azul-bebê */
+    color: #333;
+    /* Cor do texto */
+    border: none;
+    padding: 15px 30px;
+    /* Padding para tornar o botão grande */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    border-radius: 5px;
+    /* Borda arredondada */
+    cursor: pointer;
+    /* Muda o cursor para a mão quando passa por cima */
+    transition: background-color 0.3s;
+    /* Transição suave ao mudar de cor */
+}
+
+.btn-azul:hover {
+    background-color: #8EC5E8;
+    /* Cor um pouco mais escura ao passar o mouse */
+}
+
+.btn-azul {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: purple;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-azul span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-azul span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn-azul:hover span {
+    padding-right: 25px;
+}
+
+.btn-azul:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+/* Estilo padrão */
+.botoes-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* ... outros estilos ... */
+}
+
+.btn-azul {
+    /* ... estilos existentes ... */
+    padding: 20px;
+    font-size: 28px;
+    margin: 5px;
+    transition: all 0.5s;
+}
+
+/* Responsivo para telas menores */
+@media only screen and (max-width: 768px) {
+    .botoes-container {
+        flex-direction: column;  /* Empilha os botões verticalmente */
+        align-items: stretch;    /* Faz os botões ocuparem a largura total */
+    }
+
+    .btn-azul {
+        width: 100%;             /* O botão ocupa a largura total */
+        padding: 15px;           /* Reduz o padding um pouco */
+        font-size: 24px;         /* Reduz o tamanho da fonte um pouco */
+        margin: 5px 0;           /* Adiciona espaço vertical entre os botões */
+    }
+}
+
+.deficiencia-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f8;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    color: #444;
+    padding: 5px 0;
+    font-size: 16px;
+    border-bottom: 1px dashed #bbb;
+    margin-bottom: 5px;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+}
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Se desejar adicionar um estilo para links no footer */
+.site-footer a {
+    color: #FFD700;
+    /* cor de ouro, por exemplo */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+.desculpa {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: purple;
+    overflow: hidden;
+    width: 50%;
+    height: 0;
+    transition: .5s ease;
+}
+
+
+.persona-image:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.fixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+}
+
+#meuCarrossel {
+    margin-top: 75px;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6f6f6;
+}
+
+.qrcode-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 250px;
+    margin: 100px auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.qrcode {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 25px;
+}
+
+.app-link {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px 20px;
+    background-color: #3498db;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.app-link:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .persona-wrapper, .noticias-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .persona-text, .persona-image, .noticia-imagem, .noticia-conteudo {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .btn-azul {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 0;
+    }
+
+    .deficiencia-container, .noticia-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .fixo {
+        position: relative;
+    }
+
+    #meuCarrossel {
+        margin-top: 20px;
+    }
+
+    .qrcode-container {
+        width: 80%;
+        padding: 20px;
+        margin: 50px auto;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    /* Styles specific to very large screens here */
+}
+
+@media only screen and (max-width: 997px) {
+
+    .noticia-container {
+        flex-direction: column; /* muda a direção de linha para coluna */
+        align-items: center;    /* centraliza os itens */
+    }
+
+    .noticia-imagem {
+        width: 100%;  /* imagem ocupa toda a largura do container */
+        max-width: 100%; /* garante que a imagem não exceda sua largura original */
+        margin-bottom: 15px; /* adiciona um espaço entre a imagem e o conteúdo da notícia */
+    }
+
+    .noticia-conteudo {
+        width: 100%;  /* conteúdo ocupa toda a largura */
+        padding: 10px 5%; /* algum padding para não colar nas bordas */
+        box-sizing: border-box; /* garante que o padding não adicione largura extra */
+    }
+
+    .ler-mais {
+        display: inline-block; /* garante que o link não ocupa toda a largura */
+        margin-top: 10px; /* espaço acima do link */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Muda o layout de linha para coluna */
+        align-items: center; /* Centraliza os itens no navbar */
+    }
+
+    .navbar-logo {
+        margin-bottom: 10px; /* Adiciona espaço entre o logo e o menu */
+    }
+
+    .navbar-menu {
+        width: 100%; /* O menu ocupa a largura total */
+        flex-direction: column; /* Muda a orientação do menu de linha para coluna */
+        text-align: center; /* Centraliza os links no menu */
+    }
+
+    .navbar-menu li {
+        margin-bottom: 10px; /* Adiciona espaço entre os itens do menu */
+    }
+}
+
+#meuCarrossel {
+    width: 100%;
+    max-width: 100%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+}
